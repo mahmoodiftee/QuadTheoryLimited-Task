@@ -2,7 +2,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
-    font-family: 'sans-serif', sans-serif;
-    background-color: #eeeff0;
-  }
+  font-family: 'sans-serif', sans-serif;
+  background-color: #eeeff0;
+  overflow-x: hidden;
+}
+
+.slick-slide>div {
+  margin: 0 15px;
+}
+.slick-slide>div:nth-child(1) {
+  margin-left: 0;
+}
+.slick-list {
+  margin-right: -15px;
+}

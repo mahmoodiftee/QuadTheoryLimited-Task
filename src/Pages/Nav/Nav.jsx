@@ -8,7 +8,7 @@ const Nav = () => {
                 <span className="text-2xl md:text-4xl font-extrabold">pti.</span>
             </div>
             <div className="flex gap-1.5 md:gap-4 justify-center items-center max-w-screen-md w-full relative">
-                <input type="text" placeholder="Search Audiobook" className="pl-8 md:pl-12 font-medium rounded-xl input w-full" />
+                <input type="text" placeholder="Search Audiobook" className="pl-8 md:pl-12 font-medium focus:border-none rounded-xl input w-full" />
                 <IoSearch className="absolute left-2 md:left-4 text-xl text-orange" />
                 <div className="dropdown dropdown-content">
                     <div tabIndex={0} className="flex bg-white py-[8px] md:py-[11px] md:px-5 rounded-xl justify-center items-center gap-5 pl-4 pr-1 md:gap-20"> <p className="text-lg font-semibold">MENU</p> <IoIosArrowUp className="text-orange font-extrabold text-2xl" /></div>
