@@ -3,8 +3,8 @@ import { FaGoogle, FaInstagram, FaTwitter } from "react-icons/fa";
 import image from '../../assets/Image2.png'
 const Footer = () => {
     return (
-        <div className="bg-[#f49f23]  w-full ">
-            <div className="grid md:grid-cols-12 h-full max-w-7xl mx-auto">
+        <div className="bg-[#f49f23] w-full ">
+            <div className="grid md:grid-cols-12 h-full max-w-7xl md:px-10 mx-auto">
                 <div className="md:col-span-7 relative h-full w-full px-4 md:px-0 pt-20 pb-32">
                     <div className="relative">
                         <input type="text" placeholder="Enter Your Email" className="pl-8 py-8 font-medium rounded-xl md:rounded-3xl text-[15px] md:text-lg input w-full" />

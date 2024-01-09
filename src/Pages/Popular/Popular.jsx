@@ -8,7 +8,7 @@ const Popular = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10');
+                const response = await axios.get('https://cors-anywhere.herokuapp.com/http://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10');
                 const data = response.data.Items;
                 const filteredData = data.filter(item => item.IsPopular === true);
                 console.log(filteredData);
