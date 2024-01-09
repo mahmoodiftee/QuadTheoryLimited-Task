@@ -5,7 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+      },
+      colors: {
+        'orange': '#fe9b60',
+        'dark': '#171717',
+        'lite': '#161616',
+      },
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {
