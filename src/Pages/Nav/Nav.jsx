@@ -3,15 +3,15 @@ import { IoSearch } from "react-icons/io5";
 import profile from '../../assets/user.png'
 const Nav = () => {
     return (
-        <div className="flex gap-6 md:gap-10 justify-between px-3">
+        <div className="flex gap-4 md:gap-10 justify-between md:px-3">
             <div className="flex-shrink mt-1.5">
                 <span className="text-2xl md:text-4xl font-extrabold">pti.</span>
             </div>
             <div className="flex gap-1.5 md:gap-4 justify-center items-center max-w-screen-md w-full relative">
-                <input type="text" placeholder="Search Audiobook" className="pl-8 md:pl-12 font-medium focus:border-none rounded-xl input w-full" />
+                <input type="text" placeholder="Search Audiobook" className="pl-9 md:pl-12 text-[12px] md:text-lg font-medium h-10 md:h-full focus:border-none rounded-lg md:rounded-xl input w-full" />
                 <IoSearch className="absolute left-2 md:left-4 text-xl text-orange" />
                 <div className="dropdown dropdown-content">
-                    <div tabIndex={0} className="flex bg-white py-[8px] md:py-[11px] md:px-5 rounded-xl justify-center items-center gap-5 pl-4 pr-1 md:gap-20"> <p className="text-lg font-semibold">MENU</p> <IoIosArrowUp className="text-orange font-extrabold text-2xl" /></div>
+                    <div tabIndex={0} className="flex bg-white py-[8px] md:py-[11px] md:px-5 rounded-lg md:rounded-xl justify-center items-center gap-4 pl-4 pr-1 md:gap-20"> <p className="text-[14px] md:text-lg font-semibold">MENU</p> <IoIosArrowUp className="text-orange font-extrabold text-2xl" /></div>
                     <ul tabIndex={0} className="dropdown-content -ml-[70px] md:-ml-0 mt-2 z-[1] menu p-2 shadow bg-base-100 rounded-box w-48">
                         <li><a>Home</a></li>
                         <li><a>Details</a></li>
