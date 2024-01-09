@@ -1,15 +1,26 @@
 import Card from "./Card";
-import json from "../assets/data.json";
+// import json from "../assets/data.json";
 import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import PrevArrow from "./Arrows/PrevArrow";
 import NextArrow from "./Arrows/NextArrow";
+import axios from "axios";
 
 const Sliders = () => {
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
-        setCards(json);
+        const fetchData = async () => {
+            try {
+                const response = await axios.get('http://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10');
+                const data = response.data.Items;
+                setCards(data);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        fetchData();
     }, []);
 
     const settings = {
@@ -45,7 +56,13 @@ const Sliders = () => {
     return (
         <div className="relative">
             <Slider {...settings}>
-                {cards.map((card) => <Card key={card.id} img={card.img} />)}
+                {cards.map((card) => (
+                    <Card
+                        key={card.Id} 
+                        img={card.ImageUrl}
+                        name={card.Name}
+                    />
+                ))}
             </Slider>
         </div>
     );
