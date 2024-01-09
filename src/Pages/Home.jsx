@@ -5,7 +5,7 @@ import Recommended from "./Recommended/Recommended";
 
 const Home = () => {
     return (
-        <div className="w-full">
+        <div className="max-w-7xl px-4 mx-auto">
             <Nav />
             <Banner/>
             <Popular/>
