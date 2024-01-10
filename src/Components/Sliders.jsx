@@ -38,9 +38,9 @@ const Sliders = ({cards}) => {
     return (
         <div className="relative">
             <Slider {...settings}>
-                {cards.map((card) => (
+                {cards.map((card, index) => (
                     <Card
-                        key={card.Id} 
+                        key={index} 
                         img={card.ImageUrl}
                         name={card.Name}
                     />
