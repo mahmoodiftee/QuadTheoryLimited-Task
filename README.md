@@ -1,6 +1,4 @@
-# FoodWorld Web App
-
-Welcome to FoodWorld, a web app showcasing popular food items. This project was created as part of a task for QuadTheory Limited.
+# Kindly install the application to access the data. There are security concerns due to the API using HTTP instead of HTTPS, resulting in the inability to display the fetched data.
 
 ## Live Demo
 
