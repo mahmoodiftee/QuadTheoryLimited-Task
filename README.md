@@ -11,9 +11,12 @@ Check out the live demo of the FoodWorld web app: [FoodWorld Live Demo](https://
 To set up the project on your local machine, follow these simple steps:
 
 ### Clone the Repository
-- git clone https://github.com/mahmoodiftee/QuadTheoryLimited-Task.git
-- cd QuadTheoryLimited-Task
-
+<pre>
+git clone https://github.com/mahmoodiftee/QuadTheoryLimited-Task.git
+</pre>
+<pre>
+cd QuadTheoryLimited-Task
+</pre>
 ## Install Dependencies
 <pre>
 npm install
