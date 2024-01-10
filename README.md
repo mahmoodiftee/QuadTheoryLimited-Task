@@ -15,7 +15,10 @@ To set up the project on your local machine, follow these simple steps:
 - cd QuadTheoryLimited-Task
 
 ## Install Dependencies
+<pre>
 npm install
-
+</pre>
 ## Run the App
+<pre>
 npm run dev
+</pre>
